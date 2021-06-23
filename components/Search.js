@@ -49,6 +49,7 @@ const Search = props => {
     const searchPet = async () => {
         if(search){
             setSearchPress(true);
+	    setPageSearch(1);
             apiFetch(`https://60d075407de0b20017108b89.mockapi.io/api/v1/animals?search=${search}&page=1&limit=10`);
         }
     };
