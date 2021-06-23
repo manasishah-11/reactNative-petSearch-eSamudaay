@@ -71,11 +71,13 @@ const Search = props => {
 
     //function to sort the fetched data according to user's choice
     const sortAge = () => {
+	setPageSort(1);
         sorting = 'bornAt';
         sortPets();
     }
 
     const sortName = () => {
+	setPageSort(1);
         sorting = 'name';
         sortPets();
     }
